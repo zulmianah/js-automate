@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeu de la vie</title>
+	<link rel="stylesheet" href="theme.min.css">
+	<script type="text/javascript" src="code.js"></script>
+</head>
+<body>
+	<div class="agency-intro">
+		<div class="container">
+			<h3> JEU DE LA VIE</h3><hr>
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="form-group">
+						<label for="ligne">Ligne</label>
+						<input type="number" class="form-control" id="ligne" placeholder="ligne">
+						<label for="colonne">Colonne</label>
+						<input type="number" class="form-control" id="colonne" placeholder="colonne">
+						<label for="limite">Limite</label>
+						<input type="number" class="form-control" id="limite" placeholder="limite">
+						<button type="submit" onclick="generer_jeu_de_la_vie()" class="btn btn-primary mt-3">Générer état initial</button>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<table class="table table-bordered">
+						<tbody id="tbody"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
